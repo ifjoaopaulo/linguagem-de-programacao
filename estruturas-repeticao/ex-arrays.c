@@ -25,26 +25,47 @@ int main() {
     // }
 
 
-    // \/ NÃO FINALIZADO!!
     // 3. A partir do array do ex. 1, cria um segundo array com os valores do 1 em ordem crescente
-    int ordemCrescente[n];
+    // int ordemCrescente[n];
+    // for (int i = 0; i < n; i++) {
+    //     ordemCrescente[i] = v[i];
+    // }
+
+    // int aux;
+    // for (int i = 0; i < n - 1; i++) {
+    //     for (int j = i + 1; j < n; j++) {
+    //         if (ordemCrescente[i] > ordemCrescente[j]) {
+    //             aux = ordemCrescente[i];
+    //             ordemCrescente[i] = ordemCrescente[j];
+    //             ordemCrescente[j] = aux;
+    //         }
+    //     }
+    // }
+    
+    // for (int i = 0; i < n; i++) {
+    //     printf("ordemCrescente[%d]: %d\n", i, ordemCrescente[i]);
+    // }
+
+
+    // 4. A partir do array do ex. 1, cria um segundo array com os valores do 1 em ordem decrescente
+    int ordemDecrescente[n];
     for (int i = 0; i < n; i++) {
-        ordemCrescente[i] = v[i];
+        ordemDecrescente[i] = v[i];
     }
 
     int aux;
     for (int i = 0; i < n - 1; i++) {
         for (int j = i + 1; j < n; j++) {
-            if (ordemCrescente[i] > ordemCrescente[j]) {
-                aux = ordemCrescente[i];
-                ordemCrescente[i] = ordemCrescente[j];
-                ordemCrescente[j] = aux;
+            if (ordemDecrescente[i] < ordemDecrescente[j]) {
+                aux = ordemDecrescente[i];
+                ordemDecrescente[i] = ordemDecrescente[j];
+                ordemDecrescente[j] = aux;
             }
         }
     }
     
     for (int i = 0; i < n; i++) {
-        printf("ordemCrescente[%d]: %d\n", i, ordemCrescente[i]);
+        printf("ordemDecrescente[%d]: %d\n", i, ordemDecrescente[i]);
     }
 
 
