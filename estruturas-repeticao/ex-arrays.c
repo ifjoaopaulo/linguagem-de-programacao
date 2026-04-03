@@ -48,25 +48,25 @@ int main() {
 
 
     // 4. A partir do array do ex. 1, cria um segundo array com os valores do 1 em ordem decrescente
-    int ordemDecrescente[n];
-    for (int i = 0; i < n; i++) {
-        ordemDecrescente[i] = v[i];
-    }
+    // int ordemDecrescente[n];
+    // for (int i = 0; i < n; i++) {
+    //     ordemDecrescente[i] = v[i];
+    // }
 
-    int aux;
-    for (int i = 0; i < n - 1; i++) {
-        for (int j = i + 1; j < n; j++) {
-            if (ordemDecrescente[i] < ordemDecrescente[j]) {
-                aux = ordemDecrescente[i];
-                ordemDecrescente[i] = ordemDecrescente[j];
-                ordemDecrescente[j] = aux;
-            }
-        }
-    }
+    // int aux;
+    // for (int i = 0; i < n - 1; i++) {
+    //     for (int j = i + 1; j < n; j++) {
+    //         if (ordemDecrescente[i] < ordemDecrescente[j]) {
+    //             aux = ordemDecrescente[i];
+    //             ordemDecrescente[i] = ordemDecrescente[j];
+    //             ordemDecrescente[j] = aux;
+    //         }
+    //     }
+    // }
     
-    for (int i = 0; i < n; i++) {
-        printf("ordemDecrescente[%d]: %d\n", i, ordemDecrescente[i]);
-    }
+    // for (int i = 0; i < n; i++) {
+    //     printf("ordemDecrescente[%d]: %d\n", i, ordemDecrescente[i]);
+    // }
 
 
     // 5. Pede um número ao usuário, checa se está no array da questão 1 e então exibe a posição deste valor
