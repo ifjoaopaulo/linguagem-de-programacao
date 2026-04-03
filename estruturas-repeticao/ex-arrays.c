@@ -25,25 +25,26 @@ int main() {
     // }
 
 
+    // \/ NÃO FINALIZADO!!
     // 3. A partir do array do ex. 1, cria um segundo array com os valores do 1 em ordem crescente
-    int ordemCrescente[n];
-    int aux;
+    // int ordemCrescente[n];
+    // int aux;
 
-    for (int i = 0; i < n; i++) {
-        ordemCrescente[i] = v[i];
-    }
+    // for (int i = 0; i < n; i++) {
+    //     ordemCrescente[i] = v[i];
+    // }
 
-    for (int i = 0; i < n; i++) {
-        if (ordemCrescente[i] > ordemCrescente[i + 1]) {
-            aux = ordemCrescente[i];
-            ordemCrescente[i] = ordemCrescente[i + 1];
-            ordemCrescente[i + 1] = aux;
-        }
-    }
+    // for (int i = 0; i < n; i++) {
+    //     if (ordemCrescente[i] > ordemCrescente[i + 1]) {
+    //         aux = ordemCrescente[i];
+    //         ordemCrescente[i] = ordemCrescente[i + 1];
+    //         ordemCrescente[i + 1] = aux;
+    //     }
+    // }
 
-    for (int i = 0; i < n; i++) {
-        printf("%d\n", ordemCrescente[i]);
-    }
+    // for (int i = 0; i < n; i++) {
+    //     printf("%d\n", ordemCrescente[i]);
+    // }
 
     // 5. Pede um número ao usuário, checa se está no array da questão 1 e então exibe a posição deste valor
     // int busca;
