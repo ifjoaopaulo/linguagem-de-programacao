@@ -10,6 +10,14 @@ int main() {
     *pa = *pb;
     *pb = temp;
 
+    /*
+    Como fazer sem a variável temporária:
+
+    *pa = *pb - *pa;
+    *pb = *pa;
+    *pa = *pa + *pa;
+    */
+
     printf("A: %d\n", a);
     printf("B: %d\n", b);
 
